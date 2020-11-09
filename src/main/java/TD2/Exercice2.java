@@ -50,6 +50,17 @@ public class Exercice2{
 
  }
 
+ public static void Question2_filtragePredicatif(Predicate<T> clients, List<T> elements) 
+ {
+    for(T e : elements)
+     {
+        for(T p : clients)
+        {
+        if ((Predicate<p>) && (Predicate<p1>))
+          System.out.println(e);
+        }
 
+     }
+ }
  
  }
