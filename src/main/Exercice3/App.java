@@ -66,7 +66,6 @@ public class App {
             System.out.println("Cet Etudiant n'a pas la moyenne");
             return true;
         } else {
-            afficheSi(etudiant.nom, etudiant.e, etudiant.annee);
             System.out.println("Cet Etudiant a la moyenne");
             return false;
         }
