@@ -1,3 +1,5 @@
+package TD2;
+
 public class Paire<T,U> {
 
     public T fst;

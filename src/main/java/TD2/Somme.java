@@ -1,3 +1,5 @@
+package TD2;
+
 import java.util.function.Function;
 
 interface Somme <T>{

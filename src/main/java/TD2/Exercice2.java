@@ -1,6 +1,13 @@
-public class Exercice2{
-   
-    public static void Question1() 
+package TD2;
+
+import java.util.List;
+import java.util.function.Predicate;
+
+import org.gradle.internal.impldep.com.amazonaws.retry.PredefinedRetryPolicies;
+
+public class Exercice2 {
+
+  public static void Question1() 
     {
 
      Paire<Integer, Integer> x = new Paire<>(90,10);
@@ -19,6 +26,7 @@ public class Exercice2{
          else 
            return true;   
        };
+       
      TailleIncorrect.test(x.fst);//Tester Taille
 
      Predicate<Integer> TailleCorrect = z ->{
@@ -27,17 +35,19 @@ public class Exercice2{
        else 
          return false;   
      };
+
      TailleCorrect.test(z.fst);//Tester Taille
 
      Predicate<Integer> PoidsLourd = y -> y > 150;
      TailleTropPetite.test(x.snd);//Tester Poids
 
-     Predicate<Integer> PoidsIncorrect = z ->{
+     Predicate<Integer> PoidsIncorrect = Integer z ->{
         if(negate (Predicate<Integer> PoidsLourd))
            return false;
         else 
           return true;   
       };
+
       PoidsIncorrect.test(x.snd);//Tester Poids
 
       Predicate<Integer> PoidsCorrect = z ->{
@@ -46,21 +56,22 @@ public class Exercice2{
         else 
           return false;   
       };
+
       PoidsCorrect.test(z.snd);//Tester Poids
 
  }
 
- public static void Question2_filtragePredicatif(Predicate<T> clients, List<T> elements) 
+ public static void Question2_filtragePredicatif(Predicate<Paire> clients, List<Integer> elements) 
  {
-    for(T e : elements)
+    for(Integer e : elements)
      {
-        for(T p : clients)
+        for(Paire p : clients)
         {
-        if ((Predicate<p>) && (Predicate<p1>))
+        if ((Predicate<p>) and (Predicate<p1>))
           System.out.println(e);
         }
 
      }
  }
- 
- }
+
+}
